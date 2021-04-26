@@ -1,6 +1,7 @@
 import '../styles/global.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import ImageClose from '../assets/close.png' 
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,12 +19,14 @@ export default function Header() {
           <a href="/">Contato</a>
           <a href="/update">Mantenha-se atualizado</a>
           <a href="/news">Receba todas as novidades</a>
-          <button onClick={() => setIsMenuOpen(false)}>I'm a button</button>
+          <button onClick={() => setIsMenuOpen(false)}>
+            <img src={ ImageClose } alt="Fechar"/>
+          </button>
         </div>
       )}
       <div className="title-home">
         <h1>MPC</h1>
-        <div>Making Peace with my Closet por THAGAMA</div>
+        <p>por Thagama</p>
       </div>
 
       <div className="links-header">

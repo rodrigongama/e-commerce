@@ -28,4 +28,17 @@
     text-transform: uppercase;
     border: 1px solid gray;
     background-color: #80808095;
+    cursor: pointer;
+}
+
+@media (max-width: 514px) {
+    .form-news {
+        width: 400px;
+    }
+}
+
+@media (max-width: 399px) {
+    .form-news {
+        width: 350px;
+    }
 }

@@ -8,8 +8,8 @@
     margin: 30px auto;
 }
 
-.subtitle-home {
-    font-size: 20px;
+.subtitle-home h2 {
+    font-size: 25px;
     text-align: center;
     margin-top: 40px;
 }
@@ -25,9 +25,10 @@
 
 /* Products ================*/
 
-.section-fotos {
+.section-models {
     max-width: 900px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .buttons {
@@ -36,7 +37,7 @@
     margin-left: 15px;
 }
 
-.section-fotos button {
+.section-models button {
     background-color: #323232;
     width: 150px;
     padding: 8px;
@@ -83,4 +84,23 @@
     border-radius: 4px;
     padding: 6px;
     margin-top: 4px;
+}
+
+@media (max-width: 599px) {
+    .subtitle-home h2 {
+        font-size: 18px;
+    }
+    
+    .buttons-model,
+    .buttons-model2 {
+        align-items: center;
+    }
+
+    .buttons-model {
+        flex-direction: column;
+    }
+
+    .buttons-model2 {
+        flex-direction: column-reverse;
+    }
 }

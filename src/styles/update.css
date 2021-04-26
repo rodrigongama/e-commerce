@@ -13,7 +13,7 @@
 }
 
 .subtitle-update h2 {
-    font-size: 32px;
+    font-size: 25px;
     max-width: 400px;
 }
 
@@ -63,6 +63,11 @@
     border: 1px solid rgb(128, 128, 128);
     border-radius: 2rem;
     background: none;
+    cursor: pointer;
+}
+
+.button-update:hover {
+    color: #e8e6e6;
 }
 
 .paragraph-update {
@@ -74,7 +79,7 @@
 .paragraph-update h2,
 .paragraph-update p {
     text-align: center;
-    width: 350px;
+    max-width: 350px;
     margin: 0 auto;
     padding-top: 25px;
 }
@@ -84,6 +89,12 @@
 
 @media (max-width: 514px) {
     #form-update {
-        width: 300px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 399px) {
+    #form-update {
+        width: 330px;
     }
 }

@@ -13,12 +13,25 @@ body {
 
 .headerContainer {
     height: 70px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1050px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding-top: 20px;
+    padding: 20px 10px 0px 10px;
+}
+
+.title-home {
+    text-align: center;
+    margin-left: 90px;
+}
+.title-home h1 {
+   letter-spacing: 10px;
+}
+
+.title-home p {
+    letter-spacing: 5px;
 }
 
 .nav-top {
@@ -40,13 +53,9 @@ body {
     border-radius: 3px;
 }
 
-.title-home {
-    text-align: center;
-    max-width: 450px;
-}
-
 .help,
 .news {
+    font-size: 12px;
     display: block;
     color: rgb(70, 70, 70);
     text-decoration: none;
@@ -90,9 +99,13 @@ body {
     background: none;
     outline: none;
     position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 10;
+    top: 7%;
+    right: 2%;
+        
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
 }
 
 
@@ -106,10 +119,16 @@ body {
     z-index: 99;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     justify-content: center;
 }
 
+.asideHome img {
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+    cursor: pointer;
+}
 
 /* Footer ================*/
 
@@ -126,4 +145,25 @@ footer p {
     font-size: 13px;
     margin: 0 auto;
     padding: 10px;
+}
+
+
+/* Aside ############# */
+@media (max-width: 599px) {
+    .asideHome {
+        display: none;
+    }
+
+    .links-header {
+        display: none;
+    }
+
+    .headerContainer {
+        flex-direction: row-reverse;
+        max-width: 90%;
+    }
+
+    .title-home {
+        margin-left: 0;
+    }
 }

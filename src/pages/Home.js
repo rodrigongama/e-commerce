@@ -20,7 +20,7 @@ export default function Home() {
         </p>
       </div>
 
-      <section className="section-fotos">
+      <section className="section-models">
         <div className="buttons-model">
           <img
             className="model1 transition"
