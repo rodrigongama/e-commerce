@@ -1,0 +1,86 @@
+/* Description ================*/
+
+.photo1 {
+    background: url('../assets/armario-cut2.jpg') no-repeat;
+    background-size: cover;
+    height: 60vh;
+    max-width: 80%;
+    margin: 30px auto;
+}
+
+.subtitle-home {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.subtitle-home p {
+    max-width: 940px;
+    font-size: 14px;
+    text-align: center;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+
+/* Products ================*/
+
+.section-fotos {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.section-fotos button {
+    background-color: #323232;
+    width: 150px;
+    padding: 8px;
+    color: #fff;
+    margin-top: 8px;
+}
+
+.buttons-model,
+.buttons-model2 {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 100px;
+}
+
+.buttons-model2 {
+    justify-content: flex-end;
+}
+
+.buttons p {
+    width: 200px;
+    padding: 8px;
+}
+
+.buttons.button1 p {
+    border-left: 1px solid black;
+}
+
+.buttons.button2 p {
+    border-right: 1px solid black;
+}
+
+.buttons.button2 {
+    align-items: flex-end;
+    margin-right: 15px;
+}
+
+
+/* Style Buttons ================*/
+
+.button {
+    background-color: #78866b;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px;
+    margin-top: 4px;
+}

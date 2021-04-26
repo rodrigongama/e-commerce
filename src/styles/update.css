@@ -1,0 +1,89 @@
+/* Subtitle ================*/
+
+.subtitle-update {
+    padding: 5px;
+    margin-top: 50px;
+}
+
+.subtitle-update h2,
+.subtitle-update p {
+    line-height: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subtitle-update h2 {
+    font-size: 32px;
+    max-width: 400px;
+}
+
+
+/* Form ================*/
+
+#form-update {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#form-update input,
+#form-update textarea {
+    margin-bottom: 5px;
+    border: none;
+    padding: 8px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+#name-update,
+#email-update {
+    width: 48%;
+}
+
+#name-update {
+    margin-right: 10px;
+}
+
+#socialmedia-update {
+    width: 100%;
+}
+
+#description-update {
+    width: 100%;
+    height: 120px;
+    resize: none;
+}
+
+.button-update {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    padding: 4px;
+    margin: 10px auto;
+    text-align: center;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 2rem;
+    background: none;
+}
+
+.paragraph-update {
+    background-color: #e8e6e6;
+    height: 180px;
+    margin-top: 30px;
+}
+
+.paragraph-update h2,
+.paragraph-update p {
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+
+/* Responsive ======================*/
+
+@media (max-width: 514px) {
+    #form-update {
+        width: 300px;
+    }
+}
