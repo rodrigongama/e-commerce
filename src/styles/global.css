@@ -140,10 +140,10 @@ h1, h2, h3 {
 /* Footer ================*/
 
 footer {
-    height: 100px;
+    height: 150px;
     width: 100%;
     background-color: rgba(231, 229, 229, 0.2);
-    margin-top: 35px;
+    margin-top: 70px;
 }
 
 footer p {
