@@ -25,8 +25,10 @@ export default function Header() {
         </div>
       )}
       <div className="title-home">
-        <h1>MPC</h1>
-        <p>por Thagama</p>
+        <Link to="/">
+          <h1>MPC</h1>
+          <p>por Thagama</p>
+        </Link>
       </div>
 
       <div className="links-header">

@@ -2,6 +2,7 @@ import IconFace  from '../assets/icon-face.png'
 import IconInsta  from '../assets/icon-insta.png'
 import IconYoutube from '../assets/icon-ytb.png'
 
+import '../styles/global.css';
 
 export default function Aside() {
   return (

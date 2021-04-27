@@ -2,7 +2,7 @@
 
 .form-news {
     max-width: 500px;
-    height: 200px;
+    height: 220px;
     margin: 150px auto;
     padding: 10px 20px;
 }
@@ -21,16 +21,21 @@
     padding: 13px;
 }
 
-#button-submit {
+button#button-submit {
     width: 100%;
     padding: 6px;
-    margin-top: 30px;
+    margin-top: 35px;
     text-transform: uppercase;
     border: 1px solid gray;
     background-color: #80808095;
     cursor: pointer;
 }
 
+button#button-submit:hover{
+    background-color: #80808061;
+}
+
+/* Responsive ########## */
 @media (max-width: 514px) {
     .form-news {
         width: 400px;

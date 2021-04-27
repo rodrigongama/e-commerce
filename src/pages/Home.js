@@ -1,3 +1,4 @@
+import '../styles/global.css';
 import '../styles/home.css';
 import Model1 from '../assets/woman1.jpg';
 import Model2 from '../assets/woman2.jpg';

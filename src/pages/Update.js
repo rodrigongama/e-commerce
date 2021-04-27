@@ -1,3 +1,4 @@
+import '../styles/global.css';
 import '../styles/update.css';
 
 export default function Update() {

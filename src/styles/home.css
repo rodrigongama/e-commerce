@@ -43,6 +43,11 @@
     padding: 8px;
     color: #fff;
     margin-top: 8px;
+    cursor: pointer;
+}
+
+.section-models button:hover{
+    background-color: #323232db;
 }
 
 .buttons-model,
@@ -57,7 +62,7 @@
 }
 
 .buttons p {
-    width: 200px;
+    width: 240px;
     padding: 8px;
 }
 
@@ -67,6 +72,7 @@
 
 .buttons.button2 p {
     border-right: 1px solid black;
+    text-align: right;
 }
 
 .buttons.button2 {
@@ -75,15 +81,11 @@
 }
 
 
-/* Style Buttons ================*/
-
-.button {
-    background-color: #78866b;
-    font-weight: 700;
-    color: #fff;
-    border-radius: 4px;
-    padding: 6px;
-    margin-top: 4px;
+/* Responsive ############ */
+@media (max-width: 746px) {
+    .photo1 {
+        background-position: center;
+    }
 }
 
 @media (max-width: 599px) {

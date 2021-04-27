@@ -2,7 +2,7 @@
 
 .subtitle-update {
     padding: 5px;
-    margin-top: 50px;
+    margin-top: 65px;
 }
 
 .subtitle-update h2,
@@ -40,7 +40,7 @@
 }
 
 #name-update {
-    margin-right: 10px;
+    margin-right: 17px;
 }
 
 #socialmedia-update {
@@ -67,7 +67,7 @@
 }
 
 .button-update:hover {
-    color: #e8e6e6;
+    background-color: #e8e6e6;
 }
 
 .paragraph-update {
@@ -90,6 +90,10 @@
 @media (max-width: 514px) {
     #form-update {
         width: 400px;
+    }
+
+    #name-update {
+        margin-right: 12px;
     }
 }
 

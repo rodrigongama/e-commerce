@@ -1,3 +1,4 @@
+import '../styles/global.css';
 import '../styles/news.css';
 
 export default function News() {
