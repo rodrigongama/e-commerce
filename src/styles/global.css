@@ -155,12 +155,14 @@ footer p {
 }
 
 
-/* Aside ############# */
-@media (max-width: 599px) {
+/* Responsive ############# */
+@media (max-width: 999px) {
     .asideHome {
         display: none;
     }
+}
 
+@media (max-width: 599px) {
     .links-header {
         display: none;
     }

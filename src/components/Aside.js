@@ -7,9 +7,15 @@ import '../styles/global.css';
 export default function Aside() {
   return (
     <aside className="asideHome">
-      <a href="/"><img src={IconYoutube} alt="Icone do Youtube" /></a>
-      <a href="/"><img src={IconInsta} alt="Icone do Instagram" /></a>
-      <a href="/"><img src={IconFace} alt="Icone do Facebook" /></a>
+      <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+        <img src={IconYoutube} alt="Icone do Youtube" />
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+        <img src={IconInsta} alt="Icone do Instagram" />
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+        <img src={IconFace} alt="Icone do Facebook" />
+      </a>
     </aside>
   );
 }

@@ -15,8 +15,8 @@ export default function Header() {
       {isMenuOpen && (
         <div className="side-bar">
           <h2>Making Peace with my Closet</h2>
-          <a href="/">Quem somos</a>
-          <a href="/">Contato</a>
+          <a href="/">Página Inicial</a>
+          <a href="/about">Quem somos</a>
           <a href="/update">Mantenha-se atualizado</a>
           <a href="/news">Receba todas as novidades</a>
           <button onClick={() => setIsMenuOpen(false)}>

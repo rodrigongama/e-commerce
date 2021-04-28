@@ -1,0 +1,30 @@
+.main-about {
+  margin: 60px auto;
+  padding: 10px;
+  max-width: 940px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.texts-about {
+  max-width: 450px;
+}
+
+.main-about h2,
+.main-about p {
+  padding: 15px;
+}
+
+.main-about h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Responsive ############ */
+@media (max-width: 599px) {
+  .main-about {
+    flex-direction: column;
+    align-items: center;
+  }
+}
