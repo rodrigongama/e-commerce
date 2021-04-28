@@ -1,9 +1,14 @@
-import '../styles/global.css';
-import '../styles/home.css';
 import Model1 from '../assets/woman1.jpg';
 import Model2 from '../assets/woman2.jpg';
 
+import ReactSwipe from 'react-swipe';
+import '../styles/global.css';
+import '../styles/home.css';
+
 export default function Home() {
+  let reactSwipeEl;
+  let reactSwipeElement;
+
   return (
     <main>
       <div className="photo1"></div>
@@ -23,50 +28,66 @@ export default function Home() {
 
       <section className="section-models">
         <div className="buttons-model">
-          <img
-            className="model1 transition"
-            src={Model1}
-            alt="Foto da Modelo 1"
-          />
+          <ReactSwipe
+          className="carousel"
+          swipeOptions={{ continuous: false, speed: 2000 }}
+
+          ref={el => (reactSwipeEl = el)}
+          >
+            <div>
+              <img
+                className="model"
+                src={Model1}
+                alt="Foto da Modelo 1"
+              />
+            </div>
+            <div>
+              <img
+                className="model"
+                src={Model2}
+                alt="Foto da Modelo 2"
+              />
+            </div>
+          </ReactSwipe>
 
           <div className="buttons button1">
             <p>ENCONTRE OPÇÕES de camisas brancas atemporais</p>
-
-            <a href="/">
-              <button>OPÇÃO 01</button>
-            </a>
-
-            <a href="/">
-              <button>OPÇÃO 02</button>
-            </a>
-
-            <a href="/">
-              <button>OPÇÃO 03</button>
-            </a>
+            
+            <button onClick={() => reactSwipeEl.prev()}>OPÇÃO 01</button>
+            <button onClick={() => reactSwipeEl.next()}>OPÇÃO 02</button>
+                        
           </div>
         </div>
 
         <div className="buttons-model2">
           <div className="buttons button2">
             <p>ENCONTRE a calça skinny que você vai usar muito!</p>
-            <a href="/">
-              <button>OPÇÃO 01</button>
-            </a>
-
-            <a href="/">
-              <button>OPÇÃO 02</button>
-            </a>
-
-            <a href="/">
-              <button>OPÇÃO 03</button>
-            </a>
+            
+            <button onClick={() => reactSwipeElement.prev()}>OPÇÃO 01</button>
+            <button onClick={() => reactSwipeElement.next()}>OPÇÃO 02</button>
           </div>
 
-          <img
-            className="model2 transition"
-            src={Model2}
-            alt="Foto da Modelo 2"
-          />
+          <ReactSwipe
+          className="carousel"
+          swipeOptions={{ continuous: false, speed: 2000 }}
+
+          ref={element => (reactSwipeElement = element)}
+          >
+            <div>
+            <img
+              className="model carousel2"
+              src={Model2}
+              alt="Foto da Modelo 2"
+            />
+            </div>
+            <div>
+            <img
+              className="model carousel2"
+              src={Model1}
+              alt="Foto da Modelo 1"
+            />
+            </div>
+          </ReactSwipe>
         </div>
       </section>
     </main>
